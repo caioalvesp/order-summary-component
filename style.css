@@ -1,0 +1,121 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+  box-sizing: border-box;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--pale-blue);
+}
+
+.card {
+  width: 22.5rem;
+  text-align: center;
+  border-radius: 1.5rem;
+  background-color: white;
+}
+
+.card--content {
+  padding: 1rem;
+}
+
+.card--hero img {
+  height: 11rem;
+  border-radius: 1.5rem 1.5rem 0 0;
+}
+
+.card--content h1 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card--content p {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.7rem;
+  color: var(--desaturated-blue);
+  padding: 0rem 2rem;
+}
+
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--very-pale-blue);
+  padding: 1.3rem 1rem;
+  border-radius: 1rem;
+}
+.price--description {
+  padding-right: 4rem;
+}
+
+.price--description h2 {
+  font-size: .9rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+.price--description h3 {
+  font-size: .9rem;
+  font-weight: 500;
+  color: var(--desaturated-blue);
+  margin: 0;
+}
+
+.price a {
+  color: var(--bright-blue);
+}
+
+.price a:hover {
+  color: var(--desaturated-blue);
+  text-decoration: none;
+}
+
+.btn {
+  display: block;
+  text-decoration: none;
+  font-weight: 900;
+  font-size: .9rem;
+}
+
+.btn:nth-of-type(1) {
+  background-color: var(--bright-blue);
+  color: white;
+  margin: 1.5rem 0;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.btn:nth-of-type(1):hover {
+  background-color: var(--desaturated-blue);
+}
+
+.btn:nth-of-type(2) {
+  margin-bottom: 1rem;
+  color: var(--desaturated-blue);
+}
+
+.btn:nth-of-type(2):hover {
+  color: black;
+}
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
